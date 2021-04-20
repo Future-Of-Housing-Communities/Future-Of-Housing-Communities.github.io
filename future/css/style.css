@@ -31,13 +31,14 @@ p {
 	width: 90%;
 	max-width: 800px;
 	background: #fff;
-	margin: 30px auto;
+	margin: 35px auto;
+	padding-bottom: 30px;
 }
 
 .mainDetails {
 	padding: 25px 35px;
 	/*border-bottom: 2px solid #cf8a05;*/
-	/*background: #ededed;*/
+	background: #000;
 }
 
 #name h1 {
@@ -53,13 +54,29 @@ p {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 }
 
+.font_size_title{
+	font-size: 140%;
+	font-weight:bold;
+}
+
 #mainArea {
 	padding: 0 40px;
 }
 #mainArea .title{
 	margin: 5px 0px;
 }
+#mainArea .image_data{
+	margin: 15px 0px;
+}
 
+hr.hr_1 {
+  border: 1px solid black;
+}
+
+
+#mainArea .body_data{
+	margin: 35px 0px;
+}
 #mainArea .body_data .say_{
 	font-style:italic;
 	text-align:right;
@@ -67,7 +84,12 @@ p {
 
 .clockdiv_{
 	text-align: center;
-	margin:25px 0px;
+	margin:35px 0px;
+}
+
+.clockdiv_text{
+	text-align:center;
+	font-weight:bold;
 }
 
 #clockdiv{
@@ -76,7 +98,7 @@ p {
   display: inline-block;
   font-weight: 100;
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 #clockdiv > div{
@@ -99,7 +121,16 @@ p {
   color: #000;
 }
 
-
+#date_detail {
+	padding: 0 40px;
+	margin:35px 0px;
+}
+.register{
+	margin:35px 0px;
+}
+.register a{
+	font-size:140%;
+}
 
 #headshot {
 	width: 12.5%;
@@ -268,6 +299,10 @@ section:last-child {
 	}
 	
 	#mainArea {
+		padding: 0 25px;
+	}
+
+	#date_detail{
 		padding: 0 25px;
 	}
 
