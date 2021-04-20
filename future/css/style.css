@@ -31,12 +31,13 @@ p {
 	width: 90%;
 	max-width: 800px;
 	background: #fff;
-	margin: 35px auto;
-	padding-bottom: 30px;
+	margin: 25px auto;
+	/*padding-bottom: 30px;*/
 }
 
 .mainDetails {
-	padding: 25px 35px;
+	padding: 35px 35px;
+	/*margin: 10px;*/
 	/*border-bottom: 2px solid #cf8a05;*/
 	background: #000;
 }
@@ -70,9 +71,8 @@ p {
 }
 
 hr.hr_1 {
-  border: 1px solid black;
+  border: 0.45px solid black;
 }
-
 
 #mainArea .body_data{
 	margin: 35px 0px;
@@ -147,6 +147,11 @@ hr.hr_1 {
 
 #name {
 	float: left;
+}
+
+#contactDetails_l {
+	float: left;
+	padding: 0px 0px;
 }
 
 #contactDetails {
