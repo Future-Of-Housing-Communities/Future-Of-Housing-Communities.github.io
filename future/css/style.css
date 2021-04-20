@@ -8,11 +8,11 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 }
 
 .container{
- display:flex;
+	display:flex;
 }
 ​
 .item-right, .item-center, .item-left{
- flex:1;
+	flex:1;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
