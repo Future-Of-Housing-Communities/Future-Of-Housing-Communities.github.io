@@ -1,6 +1,7 @@
 function set_time(set_end_time) {
 	console.log('set_time',set_end_time);
 	function getTimeRemaining(endtime) {
+		console.log(endtime);
 	  var t = Date.parse(endtime) - Date.parse(new Date());
 	  var seconds = Math.floor((t / 1000) % 60);
 	  var minutes = Math.floor((t / 1000 / 60) % 60);
@@ -27,7 +28,7 @@ function set_time(set_end_time) {
 	  var minutesSpan = clock.querySelector('.minutes');
 	  var secondsSpan = clock.querySelector('.seconds');
 	  console.log(clock);
-	  // console.log("daysSpan",daysSpan);
+	  console.log("daysSpan",daysSpan);
 
 	  function updateClock() {
 	    var t = getTimeRemaining(endtime);
