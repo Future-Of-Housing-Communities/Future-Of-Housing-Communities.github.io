@@ -47,7 +47,7 @@
 		</div>
 		<div id="mainArea" class="quickFade delayFive">
 			<div class="image_data">
-				<img src="../image/DesignCompetition.png" style="display:block; margin:auto" width="80%" alt="Design Competition" />
+				<img src="../image/DesignCompetition.jpg" style="display:block; margin:auto" width="80%" alt="Design Competition" />
 			</div>
 			<hr class="hr_1">
 			<div class="title">
@@ -108,28 +108,12 @@
 			<hr class="hr_1">
 		</div>	
 		<div id="date_detail">
-			<p class="font_size_title">
-				IMPORTANT DATES
-			</p>
-			<span style= "display:block">Announce Date: April 22nd 2021</span> 
-			<span style= "display:block">Competition Kickoff: May 22nd 2021</span>
-			<span style= "display:block">Submissions Deadline: August 22nd 2021</span>
-			<span style= "display:block">Results Announcement :September 22nd 2021</span>
-			<span style= "display:block">All deadlines are 11:59 PM CST</span>
-		
-			<div class="register" v-if="view_page_text">
-				<!-- view_page_text: 0 // 1 : text; 0 :icon -->
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSeKXC0DDX1z0iamyvrAZnshNb9WvQW9ls99Te5QBMxkwMEELA/viewform?embedded=true" class="register_a">
-					→ Register Your Team
-				</a>
-				<span style= "display:block">Detail information package will be sent out by May 22nd 12PM (CST)</span> 
-			</div>
-			<div class="register" v-else>
+			<div class="register" v-if="view_page_text==false">
 				<div>
 					Find the categories that suit you the most to register for the competition before the countdown ends; participants will receive different information packages. Each package contains further clues of the site and challenges for you to solve. 
 				</div>
 				<div class="row types">
-					<div class="col-md-3 type" style="text-align: center;">
+					<div class="col-lg-3 col-md-6 type" style="text-align: center;">
 						<div>
 							<img src="../image/architect.png" alt="architect" class="type_img"/>
 						</div>
@@ -142,7 +126,7 @@
 							SPACE
 						</div>
 					</div>
-					<div class="col-md-3 type" style="text-align: center;">
+					<div class="col-lg-3 col-md-6 type" style="text-align: center;">
 						<div>
 							<img src="../image/planner.png" alt="planner" class="type_img"/>
 						</div>
@@ -155,7 +139,7 @@
 							URBAN DESIGN
 						</div>
 					</div>
-					<div class="col-md-3 type" style="text-align: center;">
+					<div class="col-lg-3 col-md-6 type" style="text-align: center;">
 						<div>
 							<img src="../image/programmer.png" alt="programmer" class="type_img"/>
 						</div>
@@ -168,7 +152,7 @@
 							SMART OBJECTS
 						</div>
 					</div>
-					<div class="col-md-3 type" style="text-align: center;">
+					<div class="col-lg-3 col-md-6 type" style="text-align: center;">
 						<div>
 							<img src="../image/artist.png" alt="artist" class="type_img"/>
 						</div>
@@ -182,13 +166,32 @@
 						</div>
 					</div>
 				</div>
+				<hr class="hr_1">
 			</div>
-
+			<p class="font_size_title">
+				IMPORTANT DATES
+			</p>
+			<span style= "display:block">Announce Date: April 22nd 2021</span> 
+			<span style= "display:block">Competition Kickoff: May 22nd 2021</span>
+			<span style= "display:block">Submissions Deadline: August 22nd 2021</span>
+			<span style= "display:block">Results Announcement :September 22nd 2021</span>
+			<span style= "display:block">All deadlines are 11:59 PM CST</span>
+		
+			<div class="register" v-if="view_page_text==true">
+				<!-- view_page_text: 0 // 1 : text; 0 :icon -->
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSeKXC0DDX1z0iamyvrAZnshNb9WvQW9ls99Te5QBMxkwMEELA/viewform?embedded=true" class="register_a">
+					→ Register Your Team
+				</a>
+				<span style= "display:block">Detail information package will be sent out by May 22nd 12PM (CST)</span> 
+			</div>
 
 		</div>
 		<div style="background: #000;padding: 12px 35px;">
 			<span id="contactDetails_l">
 				<img src="../image/NewTaipeiCity.png" alt="NewTaipeiCity"  class="footer_img" />
+			</span>
+			<span id="contactDetails_l">
+				<img src="../image/MediaLabLogo.png" alt="MediaLabLogo"  class="footer_img" />
 			</span>
 			<span id="contactDetails_l">
 				<img src="../image/CITYSCIENCE.png" alt="CITYSCIENCE"  class="footer_img" />
