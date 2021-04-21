@@ -22,7 +22,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 html, body {
 	background: #C4C4C4; 
 	font-family: 'Lato', helvetica, arial, sans-serif; 
-	font-size: 16px; 
+	font-size: 14px; 
 	color: #222;
 }
 
@@ -44,9 +44,16 @@ p {
 }
 
 .header_img{
-	/*width: 80%;*/
+	max-width: 120px;
 	/*padding: 5px 0px;*/
 	/*height: 80%;*/
+}
+
+.footer_img{
+	max-width: 120px;
+	/*padding: 5px 0px;*/
+	/*height: 80%;*/
+	margin:0px 5px;
 }
 
 .mainDetails {
