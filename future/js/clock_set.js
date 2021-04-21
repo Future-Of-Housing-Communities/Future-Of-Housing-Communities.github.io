@@ -1,3 +1,41 @@
+function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+// var page = getParameterByName('page'); // "lorem"
+// console.log("page",page);
+
+var bg = new Vue({
+  el: '#bg',
+  data: {
+    view_page_text: false // 1 : text; 0 :icon
+  },
+  created: function () {
+  	let page = getParameterByName('page'); // "lorem"
+	console.log("page::",page);
+	if(page == "text"){
+		console.log("1");
+		this.view_page_text = true;
+	}
+	else if(page == "icon"){
+		console.log("2");
+		this.view_page_text = false;
+	}
+	else{
+		console.log("3");
+		this.view_page_text = false;
+	}
+	console.log("view_page_text",this.view_page_text);
+  }
+
+});
+
+
 function set_time(set_end_time) {
 	
 	function getTimeRemaining(endtime) {

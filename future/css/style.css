@@ -43,8 +43,14 @@ p {
 	/*padding-bottom: 30px;*/
 }
 
+.header_img{
+	/*width: 80%;*/
+	/*padding: 5px 0px;*/
+	/*height: 80%;*/
+}
+
 .mainDetails {
-	padding: 25px 35px;
+	padding: 12px 35px;
 	/*margin: 10px;*/
 	/*border-bottom: 2px solid #cf8a05;*/
 	background: #000;
@@ -136,8 +142,30 @@ hr.hr_1 {
 .register{
 	margin:35px 0px;
 }
-.register a{
+.register .register_a{
 	font-size:140%;
+}
+/*.row [class*="col-"]{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+*/
+.types .type{
+	padding: 5px 5px;
+}
+
+.types .type{
+	padding:35px 2px;
+}
+.types .type .type_img{
+	width: 60%;
+}
+.types .type .type_{
+	padding: 2px 2px;
+	height: 40px;
+}
+.types .type .type_desc{
+	padding: 2px 2px;
 }
 
 #headshot {
@@ -304,7 +332,7 @@ section:last-child {
 
 @media all and (max-width: 480px) {
 	.mainDetails {
-		padding: 25px 15px;
+		padding: 12px 15px;
 	}
 	
 	section {
