@@ -1,4 +1,5 @@
 function set_time(set_end_time) {
+	console.log('set_time',set_end_time);
 	function getTimeRemaining(endtime) {
 	  var t = Date.parse(endtime) - Date.parse(new Date());
 	  var seconds = Math.floor((t / 1000) % 60);
@@ -25,7 +26,7 @@ function set_time(set_end_time) {
 	  var hoursSpan = clock.querySelector('.hours');
 	  var minutesSpan = clock.querySelector('.minutes');
 	  var secondsSpan = clock.querySelector('.seconds');
-	  // console.log(clock);
+	  console.log(clock);
 	  // console.log("daysSpan",daysSpan);
 
 	  function updateClock() {
@@ -45,5 +46,6 @@ function set_time(set_end_time) {
 	}
 	// var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); 
 	var deadline = new Date(Date.parse(set_end_time));
+	console.log("deadline::",deadline);
 	initializeClock('clockdiv', deadline);
 }
