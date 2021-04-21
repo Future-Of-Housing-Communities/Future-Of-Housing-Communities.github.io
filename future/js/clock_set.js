@@ -65,9 +65,12 @@ function set_time(set_end_time) {
 	function toDate(str) {
 	  var m = str.split(/\D/);
 
-		var m_date = moment(m).format();
-		var formatedDate = new Date(m_date);
-		return formatedDate
+		// var m_date = moment(m).format();
+		// var formatedDate = new Date(m_date);
+		// return formatedDate
+
+		return new Date(m.replace(' ', 'T'));
+
 
 
 	  // return new Date(+m[0], +m[1] - 1, +m[2], +m[3], +m[4], +m[5]);
@@ -101,9 +104,11 @@ function set_time(set_end_time) {
 	// var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); 
 	// var deadline = new Date(Date.parse(set_end_time));
 	// var deadline = convertDateForIos(Date.parse(set_end_time));
-	var m_date = moment(Date.parse(set_end_time)).format();
-	var deadline = new Date(m_date);
+	// var m_date = moment(Date.parse(set_end_time)).format();
+	// var deadline = new Date(m_date);
 	// return formatedDate
+
+	var deadline = new Date(Date.parse(set_end_time).replace(' ', 'T'));
 
 
 	console.log("deadline::",deadline);
