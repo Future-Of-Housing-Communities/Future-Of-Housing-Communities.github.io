@@ -46,12 +46,12 @@ function set_time(set_end_time) {
 
 
 	function getTimeRemaining(endtime) {
-		console.log(endtime);
 	  var t = Date.parse(endtime) - Date.parse(new Date());
 	  var seconds = Math.floor((t / 1000) % 60);
 	  var minutes = Math.floor((t / 1000 / 60) % 60);
 	  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
 	  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+	  console.log("seconds::",seconds);
 	  return {
 	    'total': t,
 	    'days': days,
@@ -62,13 +62,14 @@ function set_time(set_end_time) {
 	}
 
 	function initializeClock(id, endtime) {
+		console.log("id, endtime",id, endtime);
 	  var clock = document.getElementById(id);
 	  var daysSpan = clock.querySelector('.days');
 	  var hoursSpan = clock.querySelector('.hours');
 	  var minutesSpan = clock.querySelector('.minutes');
 	  var secondsSpan = clock.querySelector('.seconds');
-	  console.log(clock);
-	  console.log("daysSpan",daysSpan);
+	  // console.log(clock);
+	  // console.log("daysSpan",daysSpan);
 
 	  function updateClock() {
 	    var t = getTimeRemaining(endtime);
@@ -86,6 +87,7 @@ function set_time(set_end_time) {
 	  var timeinterval = setInterval(updateClock, 1000);
 	}
 	// var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); 
+	console.log("Date.parse(set_end_time)",Date.parse(set_end_time));
 	var deadline = new Date(Date.parse(set_end_time));
 	// var deadline = convertDateForIos(Date.parse(set_end_time));
 	// var m_date = moment(Date.parse(set_end_time)).format();
