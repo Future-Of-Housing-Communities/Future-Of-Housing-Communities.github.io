@@ -7,9 +7,6 @@ function getParameterByName(name, url = window.location.href) {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
-// var page = getParameterByName('page'); // "lorem"
-// console.log("page",page);
-
 var bg = new Vue({
   el: '#bg',
   data: {
@@ -17,20 +14,18 @@ var bg = new Vue({
   },
   created: function () {
   	let page = getParameterByName('page'); // "lorem"
-	console.log("page::",page);
-	if(page == "text"){
-		console.log("1");
-		this.view_page_text = true;
-	}
-	else if(page == "icon"){
-		console.log("2");
-		this.view_page_text = false;
-	}
-	else{
-		console.log("3");
-		this.view_page_text = false;
-	}
-	console.log("view_page_text",this.view_page_text);
+	// console.log("page::",page);
+	// if(page == "text"){
+	// 	this.view_page_text = true;
+	// }
+	// else if(page == "icon"){
+	// 	this.view_page_text = false;
+	// }
+	// else{
+	// 	this.view_page_text = false;
+	// }
+	this.view_page_text = false;
+	// console.log("view_page_text",this.view_page_text);
   }
 
 });
@@ -52,7 +47,6 @@ function set_time(set_end_time) {
 			'seconds': seconds
 		};
 	}
-
 	function initializeClock(id, endtime) {
 		var clock = document.getElementById(id);
 		var daysSpan = clock.querySelector('.days');
