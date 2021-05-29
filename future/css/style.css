@@ -25,13 +25,13 @@ html, body {
 
 	/*font-family: 'Lato', helvetica, arial, sans-serif; */
 	color: #222;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .clear {clear: both;}
 
 p {
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1.4em;
 	margin-bottom: 10px;
 	color: #444;
@@ -39,11 +39,13 @@ p {
 
 ul li .mr_{
 	list-style-type:none;
+	line-height: 24px;
 }
 
 ul .mr_{
 	margin-left: 30px;
 	margin-right: 20px;
+	line-height: 24px;
 }
 
 
@@ -90,32 +92,42 @@ ul .mr_{
 }
 
 .font_size_title{
-	font-size: 24px;
+	font-size: 18px;
 	font-weight:bold; 
 	margin:10px 0px;
+	line-height: 36px;
 }
 .font_size_title_2{
-	font-size: 22px;
+	margin:6px 0px ;
+	font-size: 16px;
+	line-height: 32px;
 }
 
 .font_size_title_3{
-	font-size: 20px;
+	font-size: 14px;
+	line-height: 28px;
 	padding-left: 3%;
 }
 .font_size_title_4{
 	/*font-size: 16px;*/
 	padding-left: 6%;
+	line-height: 26px;
 }
 .font_size_title_5{
 	/*font-size: 16px;*/
 	padding-left: 9%;
+	line-height: 24px;
 }
 .font_size_title_6{
 	padding-left: 6%;
+	line-height: 22px;
 }
 .font_blod{
 	font-weight:bold;
-	font-size: 100%;
+	/*font-size: 100%;*/
+}
+.font_p{
+	line-height: 22px;
 }
 
 #mainArea {
@@ -130,6 +142,7 @@ ul .mr_{
 
 hr.hr_1 {
   border: 0.25px solid black;
+  margin: 30px 0px;
 }
 
 #mainArea .body_data{
@@ -180,12 +193,13 @@ hr.hr_1 {
 }
 
 #date_detail {
-	text-align:center;
+	/*text-align:center;*/
 	padding: 0 40px;
 	margin:35px 0px;
+	line-height: 20px;
 }
 .register{
-	margin:35px 0px;
+	margin:15px 0px;
 }
 .register .register_a{
 	font-size:140%;
@@ -196,6 +210,7 @@ hr.hr_1 {
 }
 */
 .types .type{
+	margin: 5px 0px;
 	padding: 5px 5px;
 }
 .types .type{
@@ -205,7 +220,7 @@ hr.hr_1 {
 	width: 85%;
 }
 .types .type .type_img_s{
-	width: 55%;
+	width: 35%;
 }
 .types .type .type_{
 	padding: 2px 2px;
