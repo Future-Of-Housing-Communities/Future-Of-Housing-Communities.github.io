@@ -21,19 +21,31 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 
 html, body {
 	background: #C4C4C4; 
-	font-family: 'Lato', helvetica, arial, sans-serif; 
-	font-size: 14px; 
+	font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+
+	/*font-family: 'Lato', helvetica, arial, sans-serif; */
 	color: #222;
+	font-size: 16px;
 }
 
 .clear {clear: both;}
 
 p {
-	font-size: 1em;
+	font-size: 16px;
 	line-height: 1.4em;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	color: #444;
 }
+
+ul li .mr_{
+	list-style-type:none;
+}
+
+ul .mr_{
+	margin-left: 30px;
+	margin-right: 20px;
+}
+
 
 #bg {
 	width: 90%;
@@ -67,19 +79,43 @@ p {
 #name h1 {
 	font-size: 2.5em;
 	font-weight: 700;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
 	margin-bottom: -6px;
 }
 
 #name h2 {
 	font-size: 2em;
 	margin-left: 2px;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
 }
 
 .font_size_title{
-	font-size: 140%;
+	font-size: 24px;
+	font-weight:bold; 
+	margin:10px 0px;
+}
+.font_size_title_2{
+	font-size: 22px;
+}
+
+.font_size_title_3{
+	font-size: 20px;
+	padding-left: 3%;
+}
+.font_size_title_4{
+	/*font-size: 16px;*/
+	padding-left: 6%;
+}
+.font_size_title_5{
+	/*font-size: 16px;*/
+	padding-left: 9%;
+}
+.font_size_title_6{
+	padding-left: 6%;
+}
+.font_blod{
 	font-weight:bold;
+	font-size: 100%;
 }
 
 #mainArea {
@@ -93,11 +129,11 @@ p {
 }
 
 hr.hr_1 {
-  border: 0.45px solid black;
+  border: 0.25px solid black;
 }
 
 #mainArea .body_data{
-	margin: 35px 0px;
+	/*margin: 35px 0px;*/
 }
 #mainArea .body_data .say_{
 	font-style:italic;
@@ -144,6 +180,7 @@ hr.hr_1 {
 }
 
 #date_detail {
+	text-align:center;
 	padding: 0 40px;
 	margin:35px 0px;
 }
@@ -161,12 +198,14 @@ hr.hr_1 {
 .types .type{
 	padding: 5px 5px;
 }
-
 .types .type{
-	padding:35px 2px;
+	/*padding:35px 2px;*/
 }
 .types .type .type_img{
-	width: 35%;
+	width: 85%;
+}
+.types .type .type_img_s{
+	width: 55%;
 }
 .types .type .type_{
 	padding: 2px 2px;
@@ -175,6 +214,11 @@ hr.hr_1 {
 .types .type .type_desc{
 	padding: 2px 2px;
 }
+
+.types .type .type_img_1{
+	height: 160px;
+}
+
 
 #headshot {
 	width: 12.5%;
@@ -252,14 +296,14 @@ section:last-child {
 }
 
 .sectionTitle h1 {
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
 	font-style: italic;
 	font-size: 1.5em;
 	color: #cf8a05;
 }
 
 .sectionContent h2 {
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
 	font-size: 1.3em;
 	margin-bottom: -2px;
 }
@@ -494,3 +538,96 @@ section:last-child {
 	-moz-animation-delay: 0, 2.5s;
 	animation-delay: 0, 2.5s;
 }
+
+
+
+
+
+
+
+
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 200px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow:hidden;
+}
+
+.img-comp-img img {
+  display:block;
+  vertical-align:middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+.popup{
+    width: 900px;
+    margin: auto;
+    text-align: center
+}
+.popup img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer
+}
+.show{
+    z-index: 999;
+    display: none;
+}
+.show .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.show .img-show{
+    width: 600px;
+    height: 400px;
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+.img-show span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+.img-show img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*End style*/
